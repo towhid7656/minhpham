@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="hide">
       <div class="container">
         <div class="content">
           <div class="logo">
@@ -24,18 +24,23 @@
       </div>
     </header>
     <main class="hero">
-        <div class="container">
-            <div class="content">
-                <div class="tagline">
-                    <span>Word One</span>
-                    <span>Word Two</span>
-                    <span>Word Three</span>
-                </div>
-                <div class="text">
-                    <h2>Creating Cool <span>Stuff Since</span> 2002</h2>
-                </div>
+      <div class="container">
+        <div class="content">
+          <div class="tagline">
+            <span>Word One</span>
+            <span>Word Two</span>
+            <span>Word Three</span>
+          </div>
+          <div class="text">
+            <div class="first">
+              <h2>Creating Cool <span>Stuff Since</span> 2002</h2>
             </div>
+            <div class="second">
+              <h2>Building Nice <span>Stuff Since</span> 2025</h2>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <section class="section-1" id="section1">
       <div class="container">
@@ -140,9 +145,54 @@
             </div>
             <div>
               <ul>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Tiktok</a></li>
-                <li><a href="#">Snapchat</a></li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <path
+                        d="M0 0H12V12L6.5 6L0 0Z"
+                        fill="currentColor"
+                      ></path></svg
+                    >Youtube</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <path
+                        d="M0 0H12V12L6.5 6L0 0Z"
+                        fill="currentColor"
+                      ></path></svg
+                    >Tiktok</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <path
+                        d="M0 0H12V12L6.5 6L0 0Z"
+                        fill="currentColor"
+                      ></path></svg
+                    >Snapchat</a
+                  >
+                </li>
               </ul>
             </div>
             <div>
@@ -159,5 +209,22 @@
         </div>
       </div>
     </footer>
+
+    <div class="circle"></div>
+    <div class="circle-follow"></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
