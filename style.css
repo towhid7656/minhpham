@@ -33,6 +33,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 20px;
 }
 
 .hide {
@@ -79,7 +80,7 @@ main {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding: 50px 0px;
+  padding: 50px 20px;
 }
 
 .hero .text {
@@ -137,13 +138,14 @@ main {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding: 50px 0px;
+  padding: 50px 20px;
 }
 
 .section-1 .about {
   display: grid;
   grid-template-columns: 20% auto;
   gap: 50px;
+  width: 100%;
 }
 .section-1 .image img {
   width: 100%;
@@ -193,13 +195,14 @@ main {
 
 .section-3 .text {
   margin-bottom: 25px;
+  text-align: center;
 }
 
 footer .content {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding: 50px 0px;
+  padding: 50px 20px;
 }
 
 .footer-content {
@@ -209,6 +212,9 @@ footer .content {
   ul {
     list-style-type: none;
   }
+  ul li{
+    margin-bottom: 10px;
+  }
   ul li a {
     text-decoration: none;
     color: var(--mainTextColor);
@@ -217,10 +223,26 @@ footer .content {
     display: flex;
     align-items: center;
     gap: 10px;
-    svg path{
+    line-height: 1em;
+    svg path {
       fill: var(--secondaryTextColor);
     }
   }
+}
+
+.footer-content .email{
+  margin-bottom: 30px;
+}
+
+.footer-content .email strong, .footer-content .phone strong{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-content .email span, .footer-content .phone span{
+  display: block;
+  font-weight: 400;
+  font-size: small;
 }
 
 .circle {
@@ -238,5 +260,28 @@ footer .content {
   &.active {
     opacity: 1;
     transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero .text {
+    font-size: 32px;
+  }
+  .section-1 .about {
+    grid-template-columns: 100%;
+  }
+  .section-1 .text,
+  .section-2 .text,
+  .section-3 .text {
+    font-size: 35px;
+    line-height: 1em;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+    & ul li a {
+     font-size: 20px; 
+    }
   }
 }
